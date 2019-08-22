@@ -70,9 +70,15 @@ public class MainActivity extends AppCompatActivity {
         Log.i("HELLO", String.valueOf(bits));
         int a = spots << 1;
         Log.i("HELLO", String.valueOf(a));
+        int bitsA = (int) ((Math.log(a) / Math.log(2)) + 1);
+        Log.i("HELLO", String.valueOf(bitsA));
+        int minus = (int) Math.pow(2, (bitsA-1));
+        Log.i("HELLO", String.valueOf(minus));
+        int newA = (a - minus) + 1;
+        Log.i("HELLO", String.valueOf(newA));
         int b = spots >> (bits - 1);
         Log.i("HELLO", String.valueOf(b));
-        return (a | b);
+        return (newA | b);
 
     }
 }
