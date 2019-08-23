@@ -66,9 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
     public int josephusCalculations(int spots){
 
-        int bits = (int) ((Math.log(spots) / Math.log(2)) + 1);
-        int a = spots << 1;
-        int newA = (a - (int) Math.pow(2, (int)(((Math.log(a) / Math.log(2)))))) + 1;
-        return (newA | (spots >> (bits - 1)));
+        return ((((spots << 1) - (int) Math.pow(2, (int)(((Math.log(spots << 1) / Math.log(2)))))) + 1)
+                | (spots >> (((int) ((Math.log(spots) / Math.log(2)))))));
     }
 }
