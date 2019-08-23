@@ -68,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         int bits = (int) ((Math.log(spots) / Math.log(2)) + 1);
         int a = spots << 1;
-        int newA = (int)(a - (Math.pow(2, ((Math.log(a) / Math.log(2)))))) + 1;
+        int newA = (a - (int) Math.pow(2, (int)(((Math.log(a) / Math.log(2)))))) + 1;
         return (newA | (spots >> (bits - 1)));
-
     }
 }

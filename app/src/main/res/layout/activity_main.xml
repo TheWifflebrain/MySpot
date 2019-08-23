@@ -74,6 +74,7 @@
         android:id="@+id/numSpots"
         android:layout_width="187dp"
         android:layout_height="41dp"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
