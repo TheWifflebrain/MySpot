@@ -47,9 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
                 numSpots = String.valueOf(spots);
                 txtResults.append(numSpots);
-
             }
-
         });
 
         buttonReset.setOnClickListener(new View.OnClickListener() {
@@ -60,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
                 numSpots = "1";
                 txtResults.setText("Sit in spot: ");
             }
-
         });
     }
 
