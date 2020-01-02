@@ -22,11 +22,8 @@ public class MainActivity extends AppCompatActivity {
     public Button buttonReset;
     public EditText setNumSpots;
     public TextView txtResults;
-
-
     public String numSpots = "1";
     public int spots;
-
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -39,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         buttonReset = findViewById(R.id.reset);
         setNumSpots = findViewById(R.id.numSpots);
         txtResults = findViewById(R.id.results);
-
-
-
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
 
