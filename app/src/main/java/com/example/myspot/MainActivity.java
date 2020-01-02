@@ -1,9 +1,14 @@
 package com.example.myspot;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -17,8 +22,11 @@ public class MainActivity extends AppCompatActivity {
     public Button buttonReset;
     public EditText setNumSpots;
     public TextView txtResults;
+
+
     public String numSpots = "1";
     public int spots;
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -32,8 +40,12 @@ public class MainActivity extends AppCompatActivity {
         setNumSpots = findViewById(R.id.numSpots);
         txtResults = findViewById(R.id.results);
 
+
+
+
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 spots = 1;
@@ -56,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonReset.setOnClickListener(new View.OnClickListener() {
 
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 spots = 1;
@@ -63,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 txtResults.setText("Sit in spot: ");
             }
         });
+
     }
 
     public int josephusCalculations(int spots){

@@ -5,5 +5,9 @@
     <string name="how_many_spots">How many spots?</string>
     <string name="my_spot">My Spot</string>
     <string name="calculate">Calculate</string>
-    <string name="problem">*refers to the Josephus Problem</string>
+    <string name="info">Info</string>
+
+    <string
+        name="problem">*refers to the Josephus Problem \n\n <a href="https://wikipedia.org/wiki/Josephus_problem">
+        Wikipedia article</a> \n\n <a href="https://www.youtube.com/watch?v=uCsD3ZGzMgE">Video explanation</a></string>
 </resources>
